@@ -1,49 +1,67 @@
 
 body {
-  background-color: #0f0f0f;
-  color: #cccccc;
+  background-color: #0d0d0d;
+  color: #14ffec;
   font-family: 'Fira Code', monospace;
   margin: 0;
   padding: 0;
+  background-image: radial-gradient(#0f0f0f, #000);
 }
+
 .hero {
+  background-color: #0d0d0d;
+  padding: 60px 20px 40px;
   text-align: center;
-  padding: 40px 20px;
-  color: #14ffec;
+  border-bottom: 1px solid #9000ff55;
 }
-.hero h1 {
-  font-family: 'Orbitron', sans-serif;
-  color: #9000ff;
-  font-size: 2.5em;
-  margin: 10px 0;
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.hero p {
-  font-size: 1.1em;
-  margin: 4px 0;
-  color: #14ffec;
-}
+
 .logo {
-  width: 120px;
+  width: 140px;
+  filter: drop-shadow(0 0 12px #14ffecaa);
   margin-bottom: 20px;
 }
-.about {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-.about h2 {
-  color: #14ffec;
+
+.hero-text h1 {
   font-family: 'Orbitron', sans-serif;
-}
-.about h3 {
+  font-size: 2.6em;
   color: #9000ff;
-  font-family: 'Orbitron', sans-serif;
+  margin: 0 0 10px;
 }
-.about ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
-.about li {
-  margin: 6px 0;
+
+.hero-text h2 {
+  font-weight: normal;
+  font-size: 1.2em;
   color: #14ffec;
+  margin: 0 0 15px;
+}
+
+.sub {
+  font-size: 1em;
+  color: #50f3c3;
+}
+
+nav.links {
+  margin-top: 40px;
+  text-align: center;
+}
+
+nav.links a {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1em;
+  color: #9000ff;
+  text-decoration: none;
+  margin: 0 25px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+nav.links a:hover {
+  color: #14ffec;
+  border-bottom: 2px solid #14ffec;
 }
